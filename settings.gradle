@@ -11,3 +11,4 @@ rootProject.name = "exercism-java-track"
 include("hello-world") // 1
 include("lasagna") // 2
 include("annalyns-infiltration") // 3
+include("bird-watcher") // 4
