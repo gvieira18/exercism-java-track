@@ -13,3 +13,4 @@ include("lasagna") // 2
 include("annalyns-infiltration") // 3
 include("bird-watcher") // 4
 include("karls-languages") // 5
+include("calculator-conundrum") // 6
