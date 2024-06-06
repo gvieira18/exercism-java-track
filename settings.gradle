@@ -17,3 +17,4 @@ include("calculator-conundrum") // 6
 include("reverse-string")
 include(":gigasecond")
 include(":armstrong-numbers")
+include(":leap")
