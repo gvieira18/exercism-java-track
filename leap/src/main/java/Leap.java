@@ -1,7 +1,7 @@
+import java.time.Year;
+
 class Leap {
-
     boolean isLeapYear(int year) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return Year.of(year).isLeap();
     }
-
 }
