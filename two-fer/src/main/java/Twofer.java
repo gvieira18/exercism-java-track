@@ -1,5 +1,7 @@
+import java.util.Objects;
+
 public class Twofer {
     public String twofer(String name) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return "One for " + (!Objects.isNull(name) ? name : "you") + ", one for me.";
     }
 }
