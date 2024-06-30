@@ -19,51 +19,45 @@ public class ResistorColorDuoTest {
         ).isEqualTo(10);
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testBlueAndGrey() {
         assertThat(
-                resistorColorDuo.value(new String[]{ "blue", "grey" })
+                resistorColorDuo.value(new String[]{"blue", "grey"})
         ).isEqualTo(68);
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testYellowAndViolet() {
         assertThat(
-                resistorColorDuo.value(new String[]{ "yellow", "violet" })
+                resistorColorDuo.value(new String[]{"yellow", "violet"})
         ).isEqualTo(47);
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testOrangeAndOrange() {
         assertThat(
-                resistorColorDuo.value(new String[]{ "orange", "orange" })
+                resistorColorDuo.value(new String[]{"orange", "orange"})
         ).isEqualTo(33);
     }
-    
-    @Disabled("Remove to run test")
+
     @Test
     public void testWhiteAndRed() {
         assertThat(
-                resistorColorDuo.value(new String[]{ "white", "red" })
+                resistorColorDuo.value(new String[]{"white", "red"})
         ).isEqualTo(92);
     }
-    
-    @Disabled("Remove to run test")
+
     @Test
     public void testBlackAndBrownOneDigit() {
         assertThat(
-                resistorColorDuo.value(new String[]{ "black", "brown" })
+                resistorColorDuo.value(new String[]{"black", "brown"})
         ).isEqualTo(1);
     }
 
-    @Disabled("Remove to run test")
     @Test
     public void testIgnoreAdditionalColors() {
         assertThat(
-                resistorColorDuo.value(new String[]{ "green", "brown", "orange" })
+                resistorColorDuo.value(new String[]{"green", "brown", "orange"})
         ).isEqualTo(51);
     }
 }
