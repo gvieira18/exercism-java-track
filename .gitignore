@@ -118,6 +118,10 @@ fabric.properties
 # https://plugins.jetbrains.com/plugin/7973-sonarlint
 .idea/**/sonarlint/
 
+# Discord Integration V2
+# https://plugins.jetbrains.com/plugin/23420-discord-integration-v2
+.idea/**/discord.xml
+
 # SonarQube Plugin
 # https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
 .idea/**/sonarIssues.xml
