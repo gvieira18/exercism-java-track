@@ -1,18 +1,38 @@
 import java.util.Arrays;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 class ResistorColorDuo {
-    private final Map<String, Integer> colorEntries = Map.ofEntries(Map.entry("BLACK", 0), Map.entry("BROWN", 1), Map.entry("RED", 2), Map.entry("ORANGE", 3), Map.entry("YELLOW", 4), Map.entry("GREEN", 5), Map.entry("BLUE", 6), Map.entry("VIOLET", 7), Map.entry("GREY", 8), Map.entry("WHITE", 9));
+    private enum Color {
+        BLACK(0),
+        BROWN(1),
+        RED(2),
+        ORANGE(3),
+        YELLOW(4),
+        GREEN(5),
+        BLUE(6),
+        VIOLET(7),
+        GREY(8),
+        WHITE(9);
 
-    int value(String[] colors) {
-        return Integer.parseInt(this.calculateActualResistance(colors));
+        private final int value;
+
+        Color(int value) {
+            this.value = value;
+        }
+
+        public int getValue() {
+            return value;
+        }
     }
 
-    private String calculateActualResistance(String[] colors) {
+    int value(String[] colors) {
+        return Integer.parseInt(this.getResistanceValue(colors));
+    }
+
+    private String getResistanceValue(String[] colors) {
         return Arrays.stream(colors)
                 .limit(2)
-                .map(color -> this.colorEntries.get(color.toUpperCase()).toString())
+                .map(color -> String.valueOf(Color.valueOf(color.toUpperCase()).getValue()))
                 .collect(Collectors.joining());
     }
 }
